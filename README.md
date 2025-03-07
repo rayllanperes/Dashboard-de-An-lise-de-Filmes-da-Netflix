@@ -86,6 +86,8 @@ Para a construção do projeto, foram utilizadas as seguintes tecnologias:
    - Criação de **gráficos interativos e KPIs** no Power BI.  
    - Implementação de **filtros dinâmicos** para facilitar a análise.  
 
+
+### Link dashboard: https://app.powerbi.com/links/oxXpu_8AVE?ctid=fcde5fdc-106a-483c-9e33-031d0e7acc85&pbi_source=linkShare
 ---
 
 ## Conclusão
