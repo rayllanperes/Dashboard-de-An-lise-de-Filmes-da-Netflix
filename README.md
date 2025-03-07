@@ -2,87 +2,112 @@
 
 ![dasddas](https://github.com/user-attachments/assets/26c2575e-46a1-4612-abe5-f5b2694546dd)
 
-
-### ▪ Contexto:
-A empresa de comunicação especializada em cultura geek e pop deseja iniciar um novo quadro no YouTube sobre análise de filmes. Para isso, obtiveram uma base de dados com informações detalhadas sobre filmes da Netflix, mas precisam de insights estratégicos para selecionar conteúdo de forma mais inteligente.
-
-O objetivo do projeto é construir um dashboard interativo no **Power BI**, que auxilie na tomada de decisão ao destacar filmes relevantes com base em critérios estratégicos como gênero, avaliação, duração e popularidade.
-
----
-
-### ▪ O conjunto de dados:
-O dataset utilizado contém informações essenciais sobre os filmes da Netflix, incluindo:
-- **Ano** de lançamento
-- **Descrição** do filme
-- **Duração** em minutos
-- **Gênero** principal
-- **Nota** de avaliação (rating)
-- **Elenco**
-- **Título**
-- **Número de votos**
+## Índice
+- [Descrição](#descrição)
+- [Interfaces](#interfaces)
+- [Objetivo](#objetivo)
+- [Funcionalidades do Dashboard](#funcionalidades-do-dashboard)
+- [Ferramentas](#ferramentas)
+- [Etapas de Desenvolvimento](#etapas-de-desenvolvimento)
+- [Conclusão](#conclusão)
+- [Autor](#autor)
 
 ---
 
-### ▪ Estrutura do Dashboard:
+## Descrição
+Uma empresa de comunicação especializada em cultura geek e pop deseja iniciar um novo quadro no YouTube sobre análise de filmes. Para isso, obtiveram uma base de dados com informações detalhadas sobre filmes da Netflix, mas precisam de insights estratégicos para selecionar conteúdo de forma mais inteligente.
 
-O dashboard foi dividido em **duas páginas** principais para uma análise mais organizada:
+O objetivo do projeto é construir um dashboard interativo no Power BI, que auxilie na tomada de decisão ao destacar filmes relevantes com base em critérios estratégicos como gênero, avaliação, duração e popularidade.
 
-#### **Página 1 - Análise Comparativa dos Filmes**
+---
+
+## Interfaces
+![Filmes](https://github.com/user-attachments/assets/d1b93704-0736-4b0a-83dd-1bfb5167a5a3)
+
+![Generos](https://github.com/user-attachments/assets/fcd71314-4076-4d96-8b65-dafa0e2c2963)
+
+---
+
+## Objetivo
+Criar um dashboard interativo no Power BI, aplicando técnicas de análise de dados, visualização e storytelling, para fornecer insights estratégicos sobre o catálogo de filmes da Netflix.
+
+---
+
+## Funcionalidades do Dashboard
+
+### Página 1 - Análise Comparativa dos Filmes
 **Gráficos e KPIs:**
-- **Tabela Resumo:** Exibe os principais detalhes dos filmes com filtros interativos.
-- **Gráfico de Dispersão - Ano de Lançamento x Score Médio x Total votos por título:** Mostra a distribuição das nootas dos filmes em relação à sua avaliação e ano de lançamento.
 - **Top 10 Filmes Mais Bem Avaliados:** Lista com os filmes de maior nota.
 - **Filmes Mais Votados:** Exibe os filmes mais populares com base no número de votos.
+- **Gráfico de Dispersão - Ano de Lançamento x Score Médio x Total Votos por Título:** Mostra a distribuição das notas dos filmes em relação à sua avaliação e ano de lançamento.
+- **Total de filmes por ano:** Exibe a quantidade de filmes lançadas por ano.
 
 **Principais Insights:**
 - Qual é a relação entre votos e avaliação dos filmes?
-- Quais filmes possuem melhor avaliação independente da popularidade?
+- Quais filmes possuem melhor avaliação independentemente da popularidade?
 - Quais filmes possuem a maior quantidade de votos do público?
 
-#### **Página 2 - Análise de Gêneros**
+### Página 2 - Análise de Gêneros
 **Gráficos e KPIs:**
 - **Distribuição de Filmes por Gênero:** Mostra a quantidade de filmes de cada gênero.
 - **Média de Avaliação por Gênero:** Indica quais gêneros tendem a ter melhores notas.
-- **Duração Média dos Filmes por Gênero:** Exibe a média de tempo de duração de cada tipo de filme.
+- **Qtd de Votos por Genero e Ano:** Exibe a quantidade de votos que cada gênero recebeu durante os anos.
 
 **Principais Insights:**
 - Quais gêneros possuem maior quantidade de filmes na Netflix?
-- Quais gênros possuem as melhores avaliações?
-- Existe uma relação entre gênero e tempo de duração do filme?
+- Quais gêneros possuem as melhores avaliações?
+- Existe uma relação entre a quantidade de votos por gênero e ano de lançamento?
 
 ---
 
-### ▪ Filtros Interativos:
-- **Ano de Lançamento**
-- **Gênero**
-- **Nota Mínima de Avaliação**
-- **Duração (em minutos)**
+## Ferramentas
+Para a construção do projeto, foram utilizadas as seguintes tecnologias:
+
+- **Power BI** → Para criação do dashboard e visualização de dados  
+- **Power Query** → Para manipulação e modelagem de dados estruturados
+- **Excel** → Para visualizar informações da base de dados  
+- **APIs Externas** → Para enriquecimento da base de dados  
 
 ---
 
-### ▪ APIs Utilizadas para Enriquecimento de Dados:
-Para obter mais informações e tornar a análise mais completa, foram utilizadas APIs externas:
-- **OMDb API**: Dados detalhados de filmes do IMDb.
-- **TMDb API**: Informações sobre elenco, trailers e curiosidades.
-- **Google Trends API**: Tendências de busca sobre os filmes mais populares.
+## Etapas de Desenvolvimento
+1. **Coleta de Dados:**  
+   - Extração do dataset contendo informações sobre filmes da Netflix.  
+
+2. **Limpeza e Processamento de Dados:**  
+   - Tratamento de valores nulos e duplicados.  
+   - Normalização das variáveis categóricas e numéricas.  
+
+3. **Modelagem e Transformação:**  
+   - Criação de métricas no **Power BI** utilizando **DAX**.  
+   - Construção de tabelas relacionais para melhorar a performance do dashboard.  
+
+4. **Visualização e Dashboards:**  
+   - Criação de **gráficos interativos e KPIs** no Power BI.  
+   - Implementação de **filtros dinâmicos** para facilitar a análise.  
 
 ---
 
-### ▪ Tecnologias Utilizadas:
-- **Power BI** (para criação do dashboard)
-- **APIs Externas** (para enriquecer a análise com informações adicionais)
+## Conclusão
+Este projeto permitiu a criação de um dashboard estratégico e interativo, auxiliando a empresa na seleção de filmes para análise no YouTube com base em critérios relevantes.  
+A implementação de filtros interativos e métricas estratégicas possibilitou uma visão clara do catálogo da Netflix, destacando filmes mais bem avaliados, mais populares e tendências de gêneros.
+
+**Principais aprendizados:**  
+- Uso de **Power BI** para criação de dashboards interativos.  
+- Aplicação de **DAX** para construção de métricas avançadas.  
+- **Análise exploratória de dados**.  
+- Construção de um pipeline de análise eficiente utilizando **Python e SQL**.  
 
 ---
 
-## Autor:
+## Autor
 
-<img  src="https://github.com/user-attachments/assets/05d01cfe-fa21-445f-815f-a4e9c14851ba" width="80" alt="cognitiveclass.ai logo" align="left" />
+<img  src="https://github.com/user-attachments/assets/05d01cfe-fa21-445f-815f-a4e9c14851ba" width="80" alt="Foto do autor" align="left" />
 
-### &nbsp;&nbsp;Rayllan Peres
+### Rayllan Peres  
 
-<p>
-&nbsp;&nbsp;Estudante De Ciência De Dados / Business Intelligence / Analista De Dados<br/>
-&nbsp;&nbsp;LinkedIn: https://www.linkedin.com/in/rayllan-peres/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: rayllanperes@gmail.com<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portifólio de projetos em Data Science: https://github.com/rayllanperes
-</p>
+Estudante de Ciência de Dados / Business Intelligence / Análise de Dados  
+
+- **LinkedIn:** [Rayllan Peres](https://www.linkedin.com/in/rayllan-peres/)  
+- **E-mail:** rayllanperes@gmail.com  
+- **Portfólio de projetos em Data Science:** [GitHub](https://github.com/rayllanperes)  
